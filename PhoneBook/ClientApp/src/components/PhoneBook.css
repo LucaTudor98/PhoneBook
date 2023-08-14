@@ -1,0 +1,112 @@
+#deleteButton {
+        
+    @media screen and (max-width: 1199px){
+        position: relative;
+        margin-left: 25%;
+        margin-right: 0px;
+    }
+
+    @media screen and (max-width: 991px){
+        position: relative;
+        margin: 0px;
+    }
+
+    @media screen and (max-width: 767px){
+        position: relative;
+        margin: 0px;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    @media screen and (max-width: 497px){
+        position: relative;
+        margin-left: 15%;
+        margin-right: 10%;
+        margin-top: 5px;
+    }
+    
+    margin-right: 5%;
+    margin-left: 45%;
+    padding: 5px 15px;
+    position: left;
+}
+
+#editButton {
+    @media screen and (max-width: 1199px){
+        position: relative;
+        margin-left: 15%;
+    }
+
+    @media screen and (max-width: 991px){
+        position: relative;
+        margin-right: 10%;
+    }
+
+    @media screen and (max-width: 767px){
+        position: relative;
+        margin-left: 5px
+    }
+
+    @media screen and (max-width: 497px){
+        position: relative;
+        margin-left: 25%;
+        margin-right: 10%;
+        margin-bottom: 5px;
+    }
+
+    margin-left: 5%;
+    padding: 5px 15px;
+}
+
+.tableHead {
+    text-align: center;
+}
+
+#submitButton {
+    @media screen and (max-width: 388px){
+        position: absolute;
+        top: 16%;
+        left: 30%;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin: 50%;
+    }
+
+    @media screen and (max-width: 991px) {
+        margin: 15px 40%
+    }
+
+    width: 100px;
+    height: 30px;
+    margin-top: 7px;
+    padding: 0px 10px;
+}
+
+
+#phoneInput {
+    @media screen and (max-width: 767px) {
+        position: relative;
+        left: 10%;
+    }
+
+    @media screen and (max-width: 388px){
+        position: relative;
+        left: 0%;
+    }
+}
+
+.input {
+    border-radius:20px;
+    border: 1px solid #2d9fd9;
+    padding-left: 10%;
+    margin: 10px 0px;
+}
+
+.editInput {
+    border-radius:20px;
+    border: 1px solid #2d9fd9;
+    padding: 4px 5%;
+    font-size: 15px;
+    margin: 10px 0px;
+}

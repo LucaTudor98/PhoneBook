@@ -10,15 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<PartnerContext>(options =>
 options.UseSqlite(builder.Configuration.GetConnectionString("WebApiDatabase")));
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-                  policy =>
-                  {
-                      policy.WithOrigins("http://example.com",
-                                          "http://www.contoso.com");
-                  });
-});
+builder.Services.AddCors();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddEndpointsApiExplorer();
@@ -40,7 +32,14 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-app.UseCors(MyAllowSpecificOrigins);
+app.UseCors(builder =>
+{
+    builder
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader();
+});
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
